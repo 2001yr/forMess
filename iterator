@@ -1,0 +1,19 @@
+package com.itheima.edu.info.Time.Collection;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+public class iterator {
+    public static void main(String[] args) {
+        Collection<String> c = new ArrayList<>();
+        c.add("hello");
+        c.add("world");
+        c.add("java");
+        Iterator<String> it =c.iterator(); //用对象调用迭代器，将迭代器位置移动到下一位
+        while (it.hasNext()){
+            String s =it.next();
+            System.out.println(s);
+        }
+    }
+}
